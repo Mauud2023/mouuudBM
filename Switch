@@ -1,0 +1,22 @@
+let grades = prompt("enter your grades")
+let text = "";
+if (grades <= 49) {
+    text = "your score is =" + "F"
+}
+else if (grades <= 65) {
+    text = "your score is =" + "D"
+}
+else if (grades <= 75) {
+    text = "your score is =" + "C"
+}
+else if (grades <= 85) {
+    text = "your score is =" + "B"
+}
+else if (grades <= 100) {
+    text = "your score is =" + "A"
+}
+else {
+    text = "wrong valid"
+}
+
+document.getElementById("demo").innerHTML = text;
